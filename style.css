@@ -1,0 +1,64 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.swot {
+    border: 1px solid white;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.swot .box {
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: rgba(255,255,255,0.8);
+    display: table;
+    float: left;
+    font-size: 2em;
+    height: 50%;
+    text-align: center;
+    vertical-align: center;
+    width: 50%;
+}
+
+.swot .box .description {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.swot .box .description h2 {
+    font-size: 16vh;
+    font-weight: bold;
+    margin: 0;
+}
+
+.swot .box .description p {
+    font-size: 4vh;
+    margin: 0;
+}
+
+.swot .box.strengths {
+    background-color: #e96848;
+}
+
+.swot .box.weaknesses {
+    background-color: #77bd43;
+}
+
+.swot .box.opportunities {
+    background-color: #288dc1;
+}
+
+.swot .box.threats {
+    background-color: #646a69;
+}
