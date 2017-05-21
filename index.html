@@ -5,34 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>SWOT Analysis</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="swot">
-            <section class="box strengths">
-                <div class="description">
-                    <h2>S</h2>
-                    <p>Strengths</p>
-                </div>
-            </section>
-            <section class="box weaknesses">
-                <div class="description">
-                    <h2>W</h2>
-                    <p>Weaknesses</p>
-                </div>
-            </section>
-            <section class="box opportunities">
-                <div class="description">
-                    <h2>O</h2>
-                    <p>Opportunities</p>
-                </div>
-            </section>
-            <section class="box threats">
-                <div class="description">
-                    <h2>T</h2>
-                    <p>Threats</p>
-                </div>
-            </section>
-        </div>
+    <body ng-app="swot">
+        <swot-matrix>
+            <swot-box name="Strengths" color="#e96848"></swot-box>
+            <swot-box name="Weaknesses" color="#77bd43"></swot-box>
+            <swot-box name="Opportunities" color="#288dc1"></swot-box>
+            <swot-box name="Threats" color="#646a69"></swot-box>
+        </swot-matrix>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app/swot.js"></script>
+        <script src="app/matrix/matrix.js"></script>
+        <script src="app/box/box.js"></script>
     </body>
 </html>

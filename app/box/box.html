@@ -1,0 +1,10 @@
+<section class="box" ng-class="{'box-full' : full}" ng-style="{'background-color': $ctrl.color}">
+    <div class="menu">
+        <i ng-hide="full" ng-click="full = true" class="fa fa-expand" aria-hidden="true"></i>
+        <i ng-show="full" ng-click="full = false" class="fa fa-compress" aria-hidden="true"></i>
+    </div>
+    <div class="description">
+        <h2>{{$ctrl.letter}}</h2>
+        <p>{{$ctrl.name}}</p>
+    </div>
+</section>
