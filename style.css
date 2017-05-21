@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .swot {
@@ -46,6 +46,7 @@ body {
 
 .swot .box .menu i {
     cursor: pointer;
+    margin-left: 0.6em;
 }
 
 .swot .box .description {
